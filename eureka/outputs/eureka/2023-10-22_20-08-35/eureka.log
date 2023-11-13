@@ -1,0 +1,13 @@
+[2023-10-22 20:08:35,312][root][INFO] - Workspace: /home/mmpug/Eureka/eureka/outputs/eureka/2023-10-22_20-08-35
+[2023-10-22 20:08:35,312][root][INFO] - Project Root: /home/mmpug/Eureka/eureka
+[2023-10-22 20:08:35,312][root][INFO] - Using LLM: gpt-4-0314
+[2023-10-22 20:08:35,312][root][INFO] - Task: ShadowHand
+[2023-10-22 20:08:35,312][root][INFO] - Task description: to make the shadow hand spin the object to a target orientation
+[2023-10-22 20:08:35,334][root][INFO] - Iteration 0: Generating 2 samples with gpt-4-0314
+[2023-10-22 20:09:17,901][root][INFO] - Iteration 0: Prompt Tokens: 1735, Completion Tokens: 1721, Total Tokens: 3456
+[2023-10-22 20:09:17,901][root][INFO] - Iteration 0: Processing Code Run 0
+[2023-10-22 20:09:28,508][root][INFO] - Iteration 0: Code Run 0 execution error!
+[2023-10-22 20:09:28,508][root][INFO] - Iteration 0: Processing Code Run 1
+[2023-10-22 20:09:37,010][root][INFO] - Iteration 0: Code Run 1 execution error!
+[2023-10-22 20:09:37,653][root][INFO] - All code generation failed! Repeat this iteration from the current message checkpoint!
+[2023-10-22 20:09:37,654][root][INFO] - Iteration 1: Generating 2 samples with gpt-4-0314
