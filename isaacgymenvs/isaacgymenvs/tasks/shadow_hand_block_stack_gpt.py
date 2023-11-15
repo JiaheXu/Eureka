@@ -549,7 +549,6 @@ class ShadowHandBlockStackGPT(VecTask):
 
     def compute_reward(self, actions):
         self.rew_buf[:], self.rew_dict = compute_reward_gpt(self.object_pos, self.block_pos, self.goal_pos, self.right_hand_pos, self.left_hand_pos)
-        #def compute_reward_gpt(object_pos: torch.Tensor, block_pos: torch.Tensor, goal_pos: torch.Tensor, right_hand_pos: torch.Tensor, left_hand_pos: torch.Tensor) -> Tuple[torch.Tensor, Dict[str, torch.Tensor]]:
         self.extras['gpt_reward'] = self.rew_buf.mean()
         for rew_state in self.rew_dict: self.extras[rew_state] = self.rew_dict[rew_state].mean()
 
