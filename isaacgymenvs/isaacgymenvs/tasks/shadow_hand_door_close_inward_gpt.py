@@ -1463,7 +1463,8 @@ def compute_hand_reward(
 
     return reward, resets, goal_resets, progress_buf, successes, cons_successes
 
-
+import torch
+from typing import Tuple, Dict
 
 @torch.jit.script
 def compute_reward_gpt(goal_pos: torch.Tensor, door_left_handle_pos: torch.Tensor, door_right_handle_pos: torch.Tensor, left_hand_pos: torch.Tensor, right_hand_pos: torch.Tensor) -> Tuple[torch.Tensor, Dict[str, torch.Tensor]]:
