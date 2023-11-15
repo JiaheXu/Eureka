@@ -70,6 +70,29 @@ from .shadow_hand_swing_cup import ShadowHandSwingCup
 from .shadow_hand_switch import ShadowHandSwitch
 from .shadow_hand_two_catch_underarm import ShadowHandTwoCatchUnderarm
 
+
+from .shadow_hand_block_stack_gpt import ShadowHandBlockStackGPT
+from .shadow_hand_bottle_cap_gpt import ShadowHandBottleCapGPT
+from .shadow_hand_catch_abreast_gpt import ShadowHandCatchAbreastGPT
+from .shadow_hand_catch_over2underarm_gpt import ShadowHandCatchOver2UnderarmGPT
+from .shadow_hand_catch_underarm_gpt import ShadowHandCatchUnderarmGPT
+from .shadow_hand_door_close_inward_gpt import ShadowHandDoorCloseInwardGPT
+from .shadow_hand_door_close_outward_gpt import ShadowHandDoorCloseOutwardGPT
+from .shadow_hand_door_open_inward_gpt import ShadowHandDoorOpenInwardGPT
+from .shadow_hand_door_open_outward_gpt import ShadowHandDoorOpenOutwardGPT
+from .shadow_hand_grasp_and_place_gpt import ShadowHandGraspAndPlaceGPT
+
+from .shadow_hand_kettle_gpt import ShadowHandKettleGPT
+from .shadow_hand_lift_underarm_gpt import ShadowHandLiftUnderarmGPT
+from .shadow_hand_over_gpt import ShadowHandOverGPT
+from .shadow_hand_pen_gpt import ShadowHandPenGPT
+from .shadow_hand_push_block_gpt import ShadowHandPushBlockGPT
+from .shadow_hand_re_orientation_gpt import ShadowHandReOrientationGPT
+from .shadow_hand_scissors_gpt import ShadowHandScissorsGPT
+from .shadow_hand_swing_cup_gpt import ShadowHandSwingCupGPT
+from .shadow_hand_switch_gpt import ShadowHandSwitchGPT
+from .shadow_hand_two_catch_underarm_gpt import ShadowHandTwoCatchUnderarmGPT
+
 # Mappings from strings to environments
 isaacgym_task_map = {
     "AllegroHand": AllegroHand,
@@ -116,5 +139,26 @@ isaacgym_task_map = {
     "ShadowHandSwingCup": ShadowHandSwingCup,
     "ShadowHandSwitch": ShadowHandSwitch,
     "ShadowHandTwoCatchUnderarm": ShadowHandTwoCatchUnderarm,
+
+    "ShadowHandBlockStackGPT": ShadowHandBlockStackGPT,
+    "ShadowHandBottleCapGPT": ShadowHandBottleCapGPT,
+    "ShadowHandCatchAbreastGPT": ShadowHandCatchAbreastGPT,
+    "ShadowHandCatchOver2UnderarmGPT": ShadowHandCatchOver2UnderarmGPT,
+    "ShadowHandCatchUnderarmGPT": ShadowHandCatchUnderarmGPT,
+    "ShadowHandDoorCloseInwardGPT": ShadowHandDoorCloseInwardGPT,
+    "ShadowHandDoorCloseOutwardGPT": ShadowHandDoorCloseOutwardGPT,
+    "ShadowHandDoorOpenInwardGPT": ShadowHandDoorOpenInwardGPT,
+    "ShadowHandDoorOpenOutwardGPT": ShadowHandDoorOpenOutwardGPT,
+    "ShadowHandGraspAndPlaceGPT": ShadowHandGraspAndPlaceGPT,
+    "ShadowHandKettleGPT": ShadowHandKettleGPT,
+    "ShadowHandLiftUnderarmGPT": ShadowHandLiftUnderarmGPT,
+    "ShadowHandOverGPT": ShadowHandOverGPT,
+    "ShadowHandPenGPT": ShadowHandPenGPT,
+    "ShadowHandPushBlockGPT": ShadowHandPushBlockGPT,
+    "ShadowHandReOrientationGPT": ShadowHandReOrientationGPT,
+    "ShadowHandScissorsGPT": ShadowHandScissorsGPT,
+    "ShadowHandSwingCupGPT": ShadowHandSwingCupGPT,
+    "ShadowHandSwitchGPT": ShadowHandSwitchGPT,
+    "ShadowHandTwoCatchUnderarmGPT": ShadowHandTwoCatchUnderarmGPT,
 }
 
