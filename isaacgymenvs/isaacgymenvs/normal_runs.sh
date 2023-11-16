@@ -18,6 +18,6 @@ python3 train.py task=ShadowHandOver
 
 python3 train.py task=ShadowHandReOrientation
 python3 train.py task=ShadowHandScissors
-python3 train.py task=ShadowHandSwingCup
+python3 train.py task=ShadowHandSwingCup # need to change params???
 python3 train.py task=ShadowHandSwitch
 python3 train.py task=ShadowHandTwoCatchUnderarm

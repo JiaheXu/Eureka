@@ -1,6 +1,37 @@
 params:
   algo:
     name: a2c_continuous
+  
+  model:
+    name: continuous_a2c_logstd
+  
+  network:
+    name: actor_critic
+    separate: True
+    space:
+      continuous:
+        fixed_sigma: True
+        mu_activation: None
+        mu_init:
+          name: default
+          scale: 0.02
+        sigma_activation: None
+        sigma_init:
+          name: const_initializer
+          val: 0
+    mlp:
+      activation: elu
+      initializer:
+        name: default
+      regularizer:
+        name: None
+      units:
+      - 512
+      - 256
+      - 128          
+  load_checkpoint: ${if:${...checkpoint},True,False}
+  load_path: ${...checkpoint}
+  
   config:
     bounds_loss_coef: 0.001
     clip_value: true
@@ -41,31 +72,5 @@ params:
     tau: 0.95
     truncate_grads: true
     value_bootstrap: true
-  load_checkpoint: ${if:${...checkpoint},True,False}
-  load_path: ${...checkpoint}
-  model:
-    name: continuous_a2c_logstd
-  network:
-    mlp:
-      activation: elu
-      initializer:
-        name: default
-      regularizer:
-        name: None
-      units:
-      - 512
-      - 256
-      - 128
-    name: actor_critic
-    separate: true
-    space:
-      continuous:
-        fixed_sigma: true
-        mu_activation: None
-        mu_init:
-          name: default
-          scale: 0.02
-        sigma_activation: None
-        sigma_init:
-          name: const_initializer
-          val: 0
+      
+

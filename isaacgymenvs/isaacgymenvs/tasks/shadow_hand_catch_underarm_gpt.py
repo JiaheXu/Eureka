@@ -477,7 +477,7 @@ class ShadowHandCatchUnderarmGPT(VecTask):
         self.goal_object_indices = to_torch(self.goal_object_indices, dtype=torch.long, device=self.device)
 
     def compute_reward(self, actions):
-        self.rew_buf[:], self.rew_dict = compute_reward_gpt(self.goal_pos, self.object_rot, self.goal_rot, self.fingertip_pos, self.fingertip_another_pos, self.object_linvel, self.object_angvel) 
+        self.rew_buf[:], self.rew_dict = compute_reward_gpt(self.object_pos, self.goal_pos, self.object_rot, self.goal_rot, self.fingertip_pos, self.fingertip_another_pos, self.object_linvel, self.object_angvel) 
         self.extras['gpt_reward'] = self.rew_buf.mean()
         for rew_state in self.rew_dict: self.extras[rew_state] = self.rew_dict[rew_state].mean()
         # def compute_reward_gpt(object_pos: torch.Tensor,
